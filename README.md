@@ -1,40 +1,24 @@
-# Simple Keyboard
+# KeyboardJYUT
 
-[![Crowdin](https://d322cqt584bo4o.cloudfront.net/simple-keyboard/localized.svg)](https://crowdin.com/project/simple-keyboard)
+KeyboardJYUT is a lightweight Android input method under active development.
 
-<img src="images/screenshot-0.png"
-      alt="closeup"
-      width="500"/>
-      
-## About
+The project starts from [Simple Keyboard](https://github.com/rkkr/simple-keyboard), which is itself based on AOSP LatinIME. The goal is to preserve that small, responsive keyboard architecture while adding multilingual composition and physical-keyboard support using a CedIME-style handler/composer/dictionary design.
 
-Features:
-- Small size (<1MB)
-- Adjustable keyboard height for more screen space
-- Number row
-- Swipe space to move pointer
-- Delete swipe
-- Custom theme colors
-- Minimal permissions (only Vibrate)
-- Ads-free
+## Current state
 
-Feature it doesn't have and probably will never have:
-- Emojis
-- GIFs
-- Spell checker
-- Swipe typing
+The repository is currently at the rebranding/baseline stage. The Android application ID is `jyut.keyboard`. Cantonese composition and the other planned input engines are not yet implemented in the main branch.
 
-## Downloads
+## Design goals
 
-[<img src="https://f-droid.org/badge/get-it-on.png"
-      alt="Get it on F-Droid"
-      height="80">](https://f-droid.org/packages/rkr.simplekeyboard.inputmethod/)
-[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"
-      alt="Get it on Google Play"
-      height="80">](https://play.google.com/store/apps/details?id=rkr.simplekeyboard.inputmethod)
+- Keep normal key handling lightweight and allocation-conscious.
+- Support touch keyboards and physical keyboards as first-class input sources.
+- Add Jyutping and Yale Cantonese input using a shared compact Cantonese dictionary.
+- Support ten-key/T9 input across input methods, not only Latin or Cantonese.
+- Add regional Stroke input with separate Hong Kong, Taiwan, Mainland and Japanese stroke data.
+- Keep optional features such as handwriting, Japanese conversion, emoji, clipboard, translation and voice input lazy/on-demand so they do not slow ordinary typing.
 
-## Credits
+## Upstream and licensing
 
-Licensed under Apache License Version 2
+KeyboardJYUT is derived from Simple Keyboard and AOSP LatinIME. Existing upstream copyright and Apache License 2.0 notices are retained in the source tree. See [LICENSE](LICENSE).
 
-This keyboard is based on AOSP LatinIME keyboard. You can get the original source code in https://android.googlesource.com/platform/packages/inputmethods/LatinIME/
+Additional dictionaries, language engines or optional modules may carry their own compatible licences and attribution; these will be documented when added.
