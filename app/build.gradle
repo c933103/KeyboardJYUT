@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 
 android {
     defaultConfig {
-        applicationId "rkr.simplekeyboard.inputmethod"
+        applicationId "jyut.keyboard"
         compileSdk 37
         minSdkVersion 24
         targetSdkVersion 37
-        versionCode 147
-        versionName "6.6"
+        versionCode 1
+        versionName "0.1.0"
     }
     buildTypes {
         release {
@@ -15,6 +15,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    // Keep the inherited Simple Keyboard/AOSP Java namespace during the initial rebrand.
+    // The install/application identity is the applicationId above.
     namespace 'rkr.simplekeyboard.inputmethod'
 }
 

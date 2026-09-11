@@ -19,8 +19,9 @@
 -->
 
 <resources>
-    <string name="english_ime_name" translatable="false">Simple Keyboard</string>
-    <string name="english_ime_settings" translatable="false">Simple Keyboard Settings</string>
-    <string name="privacy_policy_url" translatable="false">https://github.com/rkkr/simple-keyboard/blob/master/PRIVACY.md</string>
-    <string name="license_url" translatable="false">https://github.com/rkkr/simple-keyboard/blob/master/LICENSE</string>
+    <string name="english_ime_name" translatable="false">KeyboardJYUT</string>
+    <string name="english_ime_settings" translatable="false">KeyboardJYUT Settings</string>
+    <string name="setup_message_brand" translatable="false">KeyboardJYUT is not enabled. Click OK to open Languages &amp; Input settings. You will need to select KeyboardJYUT in your current keyboard to use it.</string>
+    <string name="privacy_policy_url" translatable="false">https://github.com/c933103/KeyboardJYUT/blob/master/PRIVACY.md</string>
+    <string name="license_url" translatable="false">https://github.com/c933103/KeyboardJYUT/blob/master/LICENSE</string>
 </resources>
